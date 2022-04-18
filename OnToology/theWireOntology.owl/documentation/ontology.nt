@@ -1,0 +1,568 @@
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl> <http://purl.org/dc/elements/1.1/creator> "Jose Vicente Barrachina Bosch"@en .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl> <http://purl.org/dc/elements/1.1/title> "The Wire Ontology"@en .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology about The Wire TV series by David Simon."@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the Season a Chapter belongs to."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a Chapter belongs to a Season."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the song played at the chapter's end."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the Chapter some Character appears in for the first time."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "The Order a Chapter has in relation to all other chapters."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the place a Chapter or Season is located."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the Song played at a Chapter's start."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The Role a Character plays in the series."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A Chapter's order inside a Season."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The name given to a Chapter."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the organization a character belongs to."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the character an actor plays in the series."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date class and its subclasses are expressed as dateTime values."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the running time in minutes."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name given to an object."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the alias used for some characters."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition> <http://www.w3.org/2000/01/rdf-schema#comment> "The position given to an object."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the total number of Chapters that belong to a Season."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who acts in stage plays, motion pictures, etc."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date some chapter gets emitted for the first time."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date a person is born."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast> <http://www.w3.org/2000/01/rdf-schema#comment> "A selection of actors."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> <http://www.w3.org/2000/01/rdf-schema#comment> "A main division of a TV series."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "A person represented in a drama, story, etc."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who writes music."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who creates something."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of people involved in a particular kind of work or working together."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date> <http://www.w3.org/2000/01/rdf-schema#comment> "The time in terms of the month, day and/or year."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause> <http://www.w3.org/2000/01/rdf-schema#comment> "The reason one person died."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "One who interprets the script and supervises the development of a theater, film, television or radio production."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer> <http://www.w3.org/2000/01/rdf-schema#comment> "The person who executes the production of a play."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance> <http://www.w3.org/2000/01/rdf-schema#comment> "First character's appearance in the series."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance> <http://www.w3.org/2000/01/rdf-schema#comment> "Last time some character appears in the series."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A place."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order> <http://www.w3.org/2000/01/rdf-schema#comment> "The chapter's order regarding the rest of the chapters."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of persons group together or organized for some purpose or work. An association."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer> <http://www.w3.org/2000/01/rdf-schema#comment> "A person responsible for the financial and administrative aspects of a stage, film, television or radio production."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "A part played by an actor or singer."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time> <http://www.w3.org/2000/01/rdf-schema#comment> "A chapter's length in minutes."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of a TV series' chapters."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song> <http://www.w3.org/2000/01/rdf-schema#comment> "Short piece of music for singing."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time> <http://www.w3.org/2000/01/rdf-schema#comment> "A sistem of measuring the passage of time."@en .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title> <http://www.w3.org/2000/01/rdf-schema#comment> "Name given to some object."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Chris Bauer" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "David Simon" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Dominic West" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Francis Sobotka" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "James McNulty" .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname> "Bushy Top" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Michael K Williams" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Omar Devon Little" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Tom Waits" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Wendell Pierce" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "William Moreland" .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname> "Bunk" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Barksdale Organization" .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_15
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_37
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_60
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Drug dealer." .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fifth_season
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fifth_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fifth_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fourth_season
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fourth_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fourth_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#second_season
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#second_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#second_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#third_season
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#third_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#third_season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season> .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "The Target." .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Collateral Damage." .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "Mission Accomplished." .
+# 
+# http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName> "-30-" .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60> <http://www.w3.org/2000/01/rdf-schema#comment> "-30- is the term used by journalists in North America to denote the end of a story."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid20 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid20 <http://www.w3.org/2000/01/rdf-schema#comment> "A character that murders himself commits suicide." .
+_:genid20 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid20 <http://www.w3.org/2003/11/swrl#body> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/2003/11/swrl#head> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide> .
+_:genid26 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#comment> "Members of Barksdale Org. are all drug dealers." .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid27 <http://www.w3.org/2003/11/swrl#body> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/2003/11/swrl#head> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer> .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid33 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#comment> "Chapters from 1 to 13 belong to first Season." .
+_:genid3 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#arguments> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "13"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#arguments> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p> .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o> .
+_:genid13 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o> .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid17 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

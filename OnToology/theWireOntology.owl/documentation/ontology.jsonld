@@ -1,0 +1,998 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A character that murders himself commits suicide."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid24"
+    }, {
+      "@id" : "_:genid22"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid26"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Members of Barksdale Org. are all drug dealers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid29"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Chapters from 1 to 13 belong to first Season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid17"
+    }, {
+      "@id" : "_:genid15"
+    }, {
+      "@id" : "_:genid13"
+    }, {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid19"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "13"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Jose Vicente Barrachina Bosch"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "The Wire Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An ontology about The Wire TV series by David Simon."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who acts in stage plays, motion pictures, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date some chapter gets emitted for the first time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date a person is born."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A selection of actors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A main division of a TV series."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person represented in a drama, story, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Chris Bauer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who writes music."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who creates something."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A group of people involved in a particular kind of work or working together."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The time in terms of the month, day and/or year."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "David Simon"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The reason one person died."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "One who interprets the script and supervises the development of a theater, film, television or radio production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Dominic West"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The person who executes the production of a play."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First character's appearance in the series."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Francis Sobotka"
+  } ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "James McNulty"
+  } ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname" : [ {
+    "@value" : "Bushy Top"
+  } ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Last time some character appears in the series."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A place."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Michael K Williams"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Omar Devon Little"
+  } ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The chapter's order regarding the rest of the chapters."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A group of persons group together or organized for some purpose or work. An association."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A human being."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person responsible for the financial and administrative aspects of a stage, film, television or radio production."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A part played by an actor or singer."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A chapter's length in minutes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A collection of a TV series' chapters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Short piece of music for singing."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sistem of measuring the passage of time."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name given to some object."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Tom Waits"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Wendell Pierce"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "William Moreland"
+  } ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname" : [ {
+    "@value" : "Bunk"
+  } ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Barksdale Organization"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the Season a Chapter belongs to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first"
+  } ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Drug dealer."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fifth_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fourth_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates a Chapter belongs to a Season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date class and its subclasses are expressed as dateTime values."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the song played at the chapter's end."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the Chapter some Character appears in for the first time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Order a Chapter has in relation to all other chapters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the place a Chapter or Season is located."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  }, {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the running time in minutes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The name given to an object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the alias used for some characters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the Song played at a Chapter's start."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The position given to an object."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Role a Character plays in the series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Chapter's order inside a Season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The name given to a Chapter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the total number of Chapters that belong to a Season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the organization a character belongs to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines the character an actor plays in the series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#second_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#third_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "The Target."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Collateral Damage."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "Mission Accomplished."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName" : [ {
+    "@value" : "-30-"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "-30- is the term used by journalists in North America to denote the end of a story."
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]

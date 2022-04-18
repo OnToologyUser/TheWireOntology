@@ -1,0 +1,179 @@
+{
+  "@context" : {
+    "Creator" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator"
+    },
+    "hasTitle" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle",
+      "@type" : "@id"
+    },
+    "Order" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"
+    },
+    "hasTotalChapters" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Organization" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "hasName" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director"
+    },
+    "Cast" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast"
+    },
+    "hasChapter" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter",
+      "@type" : "@id"
+    },
+    "hasPosition" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "hasSeasonOrder" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder",
+      "@type" : "@id"
+    },
+    "Last_appearance" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance"
+    },
+    "Title" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"
+    },
+    "belongsToSeason" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason",
+      "@type" : "@id"
+    },
+    "hasRole" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isPortrayedBy" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy",
+      "@type" : "@id"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location"
+    },
+    "Executive_producer" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer"
+    },
+    "Chapter" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"
+    },
+    "Aired_date" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date"
+    },
+    "Composer" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer"
+    },
+    "isMurderedBy" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy",
+      "@type" : "@id"
+    },
+    "isMemberOf" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"
+    },
+    "Date" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date"
+    },
+    "hasMinutes" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"
+    },
+    "hasDate" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Crew" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer"
+    },
+    "Role" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role"
+    },
+    "Birth_date" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date"
+    },
+    "hasEndingTheme" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "hasGlobalOrder" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder",
+      "@type" : "@id"
+    },
+    "First_appearance" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance"
+    },
+    "hasFirstAppearance" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance",
+      "@type" : "@id"
+    },
+    "hasOpeningTheme" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme",
+      "@type" : "@id"
+    },
+    "Death_Cause" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause"
+    },
+    "Running_time" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasNickname" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Song" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song"
+    },
+    "hasLocation" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation",
+      "@type" : "@id"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"
+    },
+    "Time" : {
+      "@id" : "http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time"
+    }
+  }
+}

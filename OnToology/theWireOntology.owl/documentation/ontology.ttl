@@ -1,0 +1,630 @@
+@prefix : <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#> .
+
+<http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl> rdf:type owl:Ontology ;
+                                                                           <http://purl.org/dc/elements/1.1/creator> "Jose Vicente Barrachina Bosch"@en ;
+                                                                           <http://purl.org/dc/elements/1.1/title> "The Wire Ontology"@en ;
+                                                                           rdfs:comment "An ontology about The Wire TV series by David Simon."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason
+:belongsToSeason rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :hasChapter ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :Chapter ;
+                 rdfs:range :Season ;
+                 rdfs:comment "Indicates the Season a Chapter belongs to."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter
+:hasChapter rdf:type owl:ObjectProperty ,
+                     owl:InverseFunctionalProperty ;
+            rdfs:domain :Season ;
+            rdfs:range :Chapter ;
+            rdfs:comment "Indicates a Chapter belongs to a Season."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme
+:hasEndingTheme rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Chapter ;
+                rdfs:range :Song ;
+                rdfs:comment "Indicates the song played at the chapter's end."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance
+:hasFirstAppearance rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Character ;
+                    rdfs:range :Chapter ;
+                    rdfs:comment "Indicates the Chapter some Character appears in for the first time."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder
+:hasGlobalOrder rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Chapter ;
+                rdfs:range :Order ;
+                rdfs:comment "The Order a Chapter has in relation to all other chapters."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:domain :Chapter ,
+                         :Season ;
+             rdfs:range :Location ;
+             rdfs:comment "Indicates the place a Chapter or Season is located."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme
+:hasOpeningTheme rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Chapter ;
+                 rdfs:range :Song ;
+                 rdfs:comment "Indicates the Song played at a Chapter's start."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole
+:hasRole rdf:type owl:ObjectProperty ;
+         rdfs:domain :Character ;
+         rdfs:range :Role ;
+         rdfs:comment "The Role a Character plays in the series."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder
+:hasSeasonOrder rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Chapter ;
+                rdfs:range :Order ;
+                rdfs:comment "A Chapter's order inside a Season."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle
+:hasTitle rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Chapter ;
+          rdfs:range :Title ;
+          rdfs:comment "The name given to a Chapter."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf
+:isMemberOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Character ;
+            rdfs:range :Organization ;
+            rdfs:comment "Defines the organization a character belongs to."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy
+:isMurderedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :Character ;
+              rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy
+:isPortrayedBy rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :Actor ;
+               rdfs:comment "Defines the character an actor plays in the series."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Date ;
+         rdfs:range xsd:dateTime ;
+         rdfs:comment "Date class and its subclasses are expressed as dateTime values."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes
+:hasMinutes rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Running_time ;
+            rdfs:range xsd:nonNegativeInteger ;
+            rdfs:comment "Indicates the running time in minutes."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain owl:Thing ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The name given to an object."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname
+:hasNickname rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Character ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Indicates the alias used for some characters."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition
+:hasPosition rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Order ;
+             rdfs:range xsd:nonNegativeInteger ;
+             rdfs:comment "The position given to an object."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters
+:hasTotalChapters rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Season ;
+                  rdfs:range xsd:int ;
+                  rdfs:comment "Indicates the total number of Chapters that belong to a Season."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Cast ;
+       rdfs:comment "A person who acts in stage plays, motion pictures, etc."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date
+:Aired_date rdf:type owl:Class ;
+            rdfs:subClassOf :Date ;
+            rdfs:comment "The date some chapter gets emitted for the first time."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date
+:Birth_date rdf:type owl:Class ;
+            rdfs:subClassOf :Date ;
+            rdfs:comment "The date a person is born."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast
+:Cast rdf:type owl:Class ;
+      rdfs:subClassOf :Person ;
+      owl:disjointWith :Crew ;
+      rdfs:comment "A selection of actors."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter
+:Chapter rdf:type owl:Class ;
+         rdfs:comment "A main division of a TV series."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :Person ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isPortrayedBy ;
+                             owl:allValuesFrom :Person
+                           ] ;
+           rdfs:comment "A person represented in a drama, story, etc."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer
+:Composer rdf:type owl:Class ;
+          rdfs:subClassOf :Crew ;
+          rdfs:comment "A person who writes music."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator
+:Creator rdf:type owl:Class ;
+         rdfs:subClassOf :Crew ;
+         rdfs:comment "A person who creates something."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew
+:Crew rdf:type owl:Class ;
+      rdfs:subClassOf :Person ;
+      rdfs:comment "A group of people involved in a particular kind of work or working together."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date
+:Date rdf:type owl:Class ;
+      rdfs:comment "The time in terms of the month, day and/or year."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause
+:Death_Cause rdf:type owl:Class ;
+             rdfs:comment "The reason one person died."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Crew ;
+          rdfs:comment "One who interprets the script and supervises the development of a theater, film, television or radio production."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer
+:Executive_producer rdf:type owl:Class ;
+                    rdfs:subClassOf :Producer ;
+                    rdfs:comment "The person who executes the production of a play."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance
+:First_appearance rdf:type owl:Class ;
+                  rdfs:comment "First character's appearance in the series."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance
+:Last_appearance rdf:type owl:Class ;
+                 rdfs:comment "Last time some character appears in the series."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "A place."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order
+:Order rdf:type owl:Class ;
+       rdfs:comment "The chapter's order regarding the rest of the chapters."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:comment "A group of persons group together or organized for some purpose or work. An association."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "A human being."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer
+:Producer rdf:type owl:Class ;
+          rdfs:subClassOf :Crew ;
+          rdfs:comment "A person responsible for the financial and administrative aspects of a stage, film, television or radio production."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role
+:Role rdf:type owl:Class ;
+      rdfs:comment "A part played by an actor or singer."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time
+:Running_time rdf:type owl:Class ;
+              rdfs:subClassOf :Time ;
+              rdfs:comment "A chapter's length in minutes."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season
+:Season rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasChapter ;
+                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Chapter
+                        ] ;
+        rdfs:comment "A collection of a TV series' chapters."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song
+:Song rdf:type owl:Class ;
+      rdfs:comment "Short piece of music for singing."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time
+:Time rdf:type owl:Class ;
+      rdfs:comment "A sistem of measuring the passage of time."@en .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title
+:Title rdf:type owl:Class ;
+       rdfs:comment "Name given to some object."@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer
+:Chris_Bauer rdf:type owl:NamedIndividual ,
+                      :Actor ;
+             :hasName "Chris Bauer" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon
+:David_Simon rdf:type owl:NamedIndividual ,
+                      :Creator ;
+             :hasName "David Simon" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West
+:Dominic_West rdf:type owl:NamedIndividual ,
+                       :Actor ;
+              :hasName "Dominic West" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka
+:Francis_Sobotka rdf:type owl:NamedIndividual ,
+                          :Character ;
+                 :isPortrayedBy :Chris_Bauer ;
+                 :hasName "Francis Sobotka" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty
+:James_McNulty rdf:type owl:NamedIndividual ,
+                        :Character ;
+               :isPortrayedBy :Dominic_West ;
+               :hasName "James McNulty" ;
+               :hasNickname "Bushy Top" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams
+:Michael_Williams rdf:type owl:NamedIndividual ,
+                           :Actor ;
+                  :hasName "Michael K Williams" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar
+:Omar rdf:type owl:NamedIndividual ,
+               :Character ;
+      :isPortrayedBy :Michael_Williams ;
+      :hasName "Omar Devon Little" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits
+:Tom_Waits rdf:type owl:NamedIndividual ,
+                    :Composer ;
+           :hasName "Tom Waits" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce
+:Wendell_Pierce rdf:type owl:NamedIndividual ,
+                         :Actor ;
+                :hasName "Wendell Pierce" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland
+:William_Moreland rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  :isPortrayedBy :Wendell_Pierce ;
+                  :hasName "William Moreland" ;
+                  :hasNickname "Bunk" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale
+:barksdale rdf:type owl:NamedIndividual ,
+                    :Organization ;
+           :hasName "Barksdale Organization" .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01
+:chapter_01 rdf:type owl:NamedIndividual ,
+                     :Chapter ;
+            :hasGlobalOrder :first ;
+            :hasSeasonOrder :first .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_15
+:chapter_15 rdf:type owl:NamedIndividual ,
+                     :Chapter .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_37
+:chapter_37 rdf:type owl:NamedIndividual ,
+                     :Chapter .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_60
+:chapter_60 rdf:type owl:NamedIndividual ,
+                     :Chapter .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer
+:drug_dealer rdf:type owl:NamedIndividual ,
+                      :Role ;
+             :hasName "Drug dealer." .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fifth_season
+:fifth_season rdf:type owl:NamedIndividual ,
+                       :Season .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first
+:first rdf:type owl:NamedIndividual ,
+                :Order ;
+       :hasPosition 1 .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season
+:first_season rdf:type owl:NamedIndividual ,
+                       :Season .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fourth_season
+:fourth_season rdf:type owl:NamedIndividual ,
+                        :Season .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#second_season
+:second_season rdf:type owl:NamedIndividual ,
+                        :Season .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide
+:suicide rdf:type owl:NamedIndividual ,
+                  :Death_Cause .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#third_season
+:third_season rdf:type owl:NamedIndividual ,
+                       :Season .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01
+:title_01 rdf:type owl:NamedIndividual ,
+                   :Title ;
+          :hasName "The Target." .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15
+:title_15 rdf:type owl:NamedIndividual ,
+                   :Title ;
+          :hasName "Collateral Damage." .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37
+:title_37 rdf:type owl:NamedIndividual ,
+                   :Title ;
+          :hasName "Mission Accomplished." .
+
+
+###  http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60
+:title_60 rdf:type owl:NamedIndividual ,
+                   :Title ;
+          :hasName "-30-" ;
+          rdfs:comment "-30- is the term used by journalists in North America to denote the end of a story."@en .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:c rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:o rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:p rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "A character that murders himself commits suicide." ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :c
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isMurderedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :c ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :c
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Death_Cause ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :suicide
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Members of Barksdale Org. are all drug dealers." ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :c
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isMemberOf ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :c ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :barksdale
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRole ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :c ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :drug_dealer
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Chapters from 1 to 13 belong to first Season." ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Chapter ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :c
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGlobalOrder ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :c ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :o
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPosition ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :p
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first :p ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 1 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first :p ;
+                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                           rdf:first 13 ;
+                                                                                                                                                           rdf:rest rdf:nil
+                                                                                                                                                         ]
+                                                                                                                                              ]
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :belongsToSeason ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :c ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :first_season
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
