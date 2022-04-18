@@ -1,1097 +1,999 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl"
      xml:base="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-        <Literal xml:lang="en">Jose Vicente Barrachina Bosch</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
-        <Literal xml:lang="en">The Wire Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">An ontology about The Wire TV series by David Simon.</Literal>
-    </Annotation>
-    <Declaration>
-        <Class IRI="#Actor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Aired_date"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Birth_date"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cast"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Chapter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Character"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Composer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Creator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Crew"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Date"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Death_Cause"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Director"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Executive_producer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#First_appearance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Last_appearance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Location"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Order"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Producer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Role"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Running_time"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Season"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Song"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Time"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Title"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#belongsToSeason"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasChapter"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasEndingTheme"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasFirstAppearance"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGlobalOrder"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasOpeningTheme"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasRole"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSeasonOrder"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasTitle"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isMemberOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isMurderedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasMinutes"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasNickname"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasPosition"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasTotalChapters"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Chris_Bauer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#David_Simon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Dominic_West"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Francis_Sobotka"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#James_McNulty"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Michael_Williams"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Omar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Tom_Waits"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#Wendell_Pierce"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#William_Moreland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#barksdale"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#chapter_01"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#chapter_15"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#chapter_37"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#chapter_60"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#drug_dealer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#fifth_season"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#first"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#first_season"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#fourth_season"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#second_season"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#suicide"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#third_season"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#title_01"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#title_15"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#title_37"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#title_60"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="#Actor"/>
-        <Class IRI="#Cast"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Aired_date"/>
-        <Class IRI="#Date"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Birth_date"/>
-        <Class IRI="#Date"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cast"/>
-        <Class IRI="#Person"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Character"/>
-        <Class IRI="#Person"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Character"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#isPortrayedBy"/>
-            <Class IRI="#Person"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Composer"/>
-        <Class IRI="#Crew"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Creator"/>
-        <Class IRI="#Crew"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Crew"/>
-        <Class IRI="#Person"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Director"/>
-        <Class IRI="#Crew"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Executive_producer"/>
-        <Class IRI="#Producer"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Producer"/>
-        <Class IRI="#Crew"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Running_time"/>
-        <Class IRI="#Time"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Season"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#hasChapter"/>
-            <Class IRI="#Chapter"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Cast"/>
-        <Class IRI="#Crew"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Actor"/>
-        <NamedIndividual IRI="#Chris_Bauer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Creator"/>
-        <NamedIndividual IRI="#David_Simon"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Actor"/>
-        <NamedIndividual IRI="#Dominic_West"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Character"/>
-        <NamedIndividual IRI="#Francis_Sobotka"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Character"/>
-        <NamedIndividual IRI="#James_McNulty"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Actor"/>
-        <NamedIndividual IRI="#Michael_Williams"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Character"/>
-        <NamedIndividual IRI="#Omar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Composer"/>
-        <NamedIndividual IRI="#Tom_Waits"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Actor"/>
-        <NamedIndividual IRI="#Wendell_Pierce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Character"/>
-        <NamedIndividual IRI="#William_Moreland"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Organization"/>
-        <NamedIndividual IRI="#barksdale"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Chapter"/>
-        <NamedIndividual IRI="#chapter_01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Chapter"/>
-        <NamedIndividual IRI="#chapter_15"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Chapter"/>
-        <NamedIndividual IRI="#chapter_37"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Chapter"/>
-        <NamedIndividual IRI="#chapter_60"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Role"/>
-        <NamedIndividual IRI="#drug_dealer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Season"/>
-        <NamedIndividual IRI="#fifth_season"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Order"/>
-        <NamedIndividual IRI="#first"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Season"/>
-        <NamedIndividual IRI="#first_season"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Season"/>
-        <NamedIndividual IRI="#fourth_season"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Season"/>
-        <NamedIndividual IRI="#second_season"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Death_Cause"/>
-        <NamedIndividual IRI="#suicide"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Season"/>
-        <NamedIndividual IRI="#third_season"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Title"/>
-        <NamedIndividual IRI="#title_01"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Title"/>
-        <NamedIndividual IRI="#title_15"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Title"/>
-        <NamedIndividual IRI="#title_37"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Title"/>
-        <NamedIndividual IRI="#title_60"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-        <NamedIndividual IRI="#Francis_Sobotka"/>
-        <NamedIndividual IRI="#Chris_Bauer"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-        <NamedIndividual IRI="#James_McNulty"/>
-        <NamedIndividual IRI="#Dominic_West"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-        <NamedIndividual IRI="#Omar"/>
-        <NamedIndividual IRI="#Michael_Williams"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-        <NamedIndividual IRI="#William_Moreland"/>
-        <NamedIndividual IRI="#Wendell_Pierce"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGlobalOrder"/>
-        <NamedIndividual IRI="#chapter_01"/>
-        <NamedIndividual IRI="#first"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSeasonOrder"/>
-        <NamedIndividual IRI="#chapter_01"/>
-        <NamedIndividual IRI="#first"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Chris_Bauer"/>
-        <Literal>Chris Bauer</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#David_Simon"/>
-        <Literal>David Simon</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Dominic_West"/>
-        <Literal>Dominic West</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Francis_Sobotka"/>
-        <Literal>Francis Sobotka</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#James_McNulty"/>
-        <Literal>James McNulty</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasNickname"/>
-        <NamedIndividual IRI="#James_McNulty"/>
-        <Literal>Bushy Top</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Michael_Williams"/>
-        <Literal>Michael K Williams</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Omar"/>
-        <Literal>Omar Devon Little</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Tom_Waits"/>
-        <Literal>Tom Waits</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#Wendell_Pierce"/>
-        <Literal>Wendell Pierce</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#William_Moreland"/>
-        <Literal>William Moreland</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasNickname"/>
-        <NamedIndividual IRI="#William_Moreland"/>
-        <Literal>Bunk</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#barksdale"/>
-        <Literal>Barksdale Organization</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#drug_dealer"/>
-        <Literal>Drug dealer.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasPosition"/>
-        <NamedIndividual IRI="#first"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#title_01"/>
-        <Literal>The Target.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#title_15"/>
-        <Literal>Collateral Damage.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#title_37"/>
-        <Literal>Mission Accomplished.</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasName"/>
-        <NamedIndividual IRI="#title_60"/>
-        <Literal>-30-</Literal>
-    </DataPropertyAssertion>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#belongsToSeason"/>
-        <ObjectProperty IRI="#hasChapter"/>
-    </InverseObjectProperties>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#belongsToSeason"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasEndingTheme"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasFirstAppearance"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasGlobalOrder"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasOpeningTheme"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasSeasonOrder"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasTitle"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-    </FunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#hasChapter"/>
-    </InverseFunctionalObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#belongsToSeason"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasChapter"/>
-        <Class IRI="#Season"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEndingTheme"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFirstAppearance"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasGlobalOrder"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasLocation"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasLocation"/>
-        <Class IRI="#Season"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasOpeningTheme"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasRole"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSeasonOrder"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTitle"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isMemberOf"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isMurderedBy"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#belongsToSeason"/>
-        <Class IRI="#Season"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasChapter"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEndingTheme"/>
-        <Class IRI="#Song"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasFirstAppearance"/>
-        <Class IRI="#Chapter"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasGlobalOrder"/>
-        <Class IRI="#Order"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasLocation"/>
-        <Class IRI="#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasOpeningTheme"/>
-        <Class IRI="#Song"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasRole"/>
-        <Class IRI="#Role"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSeasonOrder"/>
-        <Class IRI="#Order"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasTitle"/>
-        <Class IRI="#Title"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isMemberOf"/>
-        <Class IRI="#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isMurderedBy"/>
-        <Class IRI="#Character"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPortrayedBy"/>
-        <Class IRI="#Actor"/>
-    </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasDate"/>
-        <Class IRI="#Date"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasMinutes"/>
-        <Class IRI="#Running_time"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasName"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasNickname"/>
-        <Class IRI="#Character"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPosition"/>
-        <Class IRI="#Order"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasTotalChapters"/>
-        <Class IRI="#Season"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasDate"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasMinutes"/>
-        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasNickname"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasPosition"/>
-        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasTotalChapters"/>
-        <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Chapters from 1 to 13 belong to first Season.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S3</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Chapter"/>
-                <Variable IRI="#c"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasGlobalOrder"/>
-                <Variable IRI="#c"/>
-                <Variable IRI="#o"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasPosition"/>
-                <Variable IRI="#o"/>
-                <Variable IRI="#p"/>
-            </DataPropertyAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
-                <Variable IRI="#p"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
-                <Variable IRI="#p"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
-            </BuiltInAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#belongsToSeason"/>
-                <Variable IRI="#c"/>
-                <NamedIndividual IRI="#first_season"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Members of Barksdale Org. are all drug dealers.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S2</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Character"/>
-                <Variable IRI="#c"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isMemberOf"/>
-                <Variable IRI="#c"/>
-                <NamedIndividual IRI="#barksdale"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasRole"/>
-                <Variable IRI="#c"/>
-                <NamedIndividual IRI="#drug_dealer"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>A character that murders himself commits suicide.</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S1</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Character"/>
-                <Variable IRI="#c"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#isMurderedBy"/>
-                <Variable IRI="#c"/>
-                <Variable IRI="#c"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#Death_Cause"/>
-                <NamedIndividual IRI="#suicide"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Actor</IRI>
-        <Literal xml:lang="en">A person who acts in stage plays, motion pictures, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Actor</IRI>
-        <IRI>https://dbpedia.org/ontology/Actor</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Aired_date</IRI>
-        <Literal xml:lang="en">The date some chapter gets emitted for the first time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Birth_date</IRI>
-        <Literal xml:lang="en">The date a person is born.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Birth_date</IRI>
-        <IRI>https://dbpedia.org/ontology/birthDate</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Cast</IRI>
-        <Literal xml:lang="en">A selection of actors.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Chapter</IRI>
-        <Literal xml:lang="en">A main division of a TV series.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Character</IRI>
-        <Literal xml:lang="en">A person represented in a drama, story, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Composer</IRI>
-        <Literal xml:lang="en">A person who writes music.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Creator</IRI>
-        <Literal xml:lang="en">A person who creates something.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Crew</IRI>
-        <Literal xml:lang="en">A group of people involved in a particular kind of work or working together.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Date</IRI>
-        <Literal xml:lang="en">The time in terms of the month, day and/or year.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Death_Cause</IRI>
-        <Literal xml:lang="en">The reason one person died.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Director</IRI>
-        <Literal xml:lang="en">One who interprets the script and supervises the development of a theater, film, television or radio production.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Executive_producer</IRI>
-        <Literal xml:lang="en">The person who executes the production of a play.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#First_appearance</IRI>
-        <Literal xml:lang="en">First character&apos;s appearance in the series.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Last_appearance</IRI>
-        <Literal xml:lang="en">Last time some character appears in the series.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Location</IRI>
-        <Literal xml:lang="en">A place.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Location</IRI>
-        <IRI>https://dbpedia.org/ontology/location</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Order</IRI>
-        <Literal xml:lang="en">The chapter&apos;s order regarding the rest of the chapters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Organization</IRI>
-        <Literal xml:lang="en">A group of persons group together or organized for some purpose or work. An association.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Person</IRI>
-        <Literal xml:lang="en">A human being.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
-        <IRI>#Person</IRI>
-        <IRI>https://dbpedia.org/ontology/Person</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Producer</IRI>
-        <Literal xml:lang="en">A person responsible for the financial and administrative aspects of a stage, film, television or radio production.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Role</IRI>
-        <Literal xml:lang="en">A part played by an actor or singer.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Running_time</IRI>
-        <Literal xml:lang="en">A chapter&apos;s length in minutes.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Season</IRI>
-        <Literal xml:lang="en">A collection of a TV series&apos; chapters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Song</IRI>
-        <Literal xml:lang="en">Short piece of music for singing.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Time</IRI>
-        <Literal xml:lang="en">A sistem of measuring the passage of time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Title</IRI>
-        <Literal xml:lang="en">Name given to some object.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#belongsToSeason</IRI>
-        <Literal xml:lang="en">Indicates the Season a Chapter belongs to.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasChapter</IRI>
-        <Literal xml:lang="en">Indicates a Chapter belongs to a Season.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasDate</IRI>
-        <Literal xml:lang="en">Date class and its subclasses are expressed as dateTime values.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasEndingTheme</IRI>
-        <Literal xml:lang="en">Indicates the song played at the chapter&apos;s end.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasFirstAppearance</IRI>
-        <Literal xml:lang="en">Indicates the Chapter some Character appears in for the first time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasGlobalOrder</IRI>
-        <Literal xml:lang="en">The Order a Chapter has in relation to all other chapters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasLocation</IRI>
-        <Literal xml:lang="en">Indicates the place a Chapter or Season is located.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasMinutes</IRI>
-        <Literal xml:lang="en">Indicates the running time in minutes.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasName</IRI>
-        <Literal xml:lang="en">The name given to an object.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasNickname</IRI>
-        <Literal xml:lang="en">Indicates the alias used for some characters.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasOpeningTheme</IRI>
-        <Literal xml:lang="en">Indicates the Song played at a Chapter&apos;s start.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasPosition</IRI>
-        <Literal xml:lang="en">The position given to an object.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasRole</IRI>
-        <Literal xml:lang="en">The Role a Character plays in the series.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasSeasonOrder</IRI>
-        <Literal xml:lang="en">A Chapter&apos;s order inside a Season.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasTitle</IRI>
-        <Literal xml:lang="en">The name given to a Chapter.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasTotalChapters</IRI>
-        <Literal xml:lang="en">Indicates the total number of Chapters that belong to a Season.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isMemberOf</IRI>
-        <Literal xml:lang="en">Defines the organization a character belongs to.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#isPortrayedBy</IRI>
-        <Literal xml:lang="en">Defines the character an actor plays in the series.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#title_60</IRI>
-        <Literal xml:lang="en">-30- is the term used by journalists in North America to denote the end of a story.</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:theWireOntology="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl">
+        <dc:creator xml:lang="en">Jose Vicente Barrachina Bosch</dc:creator>
+        <dc:title xml:lang="en">The Wire Ontology</dc:title>
+        <rdfs:comment xml:lang="en">An ontology about The Wire TV series by David Simon.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+        <rdfs:comment xml:lang="en">Indicates the Season a Chapter belongs to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:comment xml:lang="en">Indicates a Chapter belongs to a Season.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasEndingTheme">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song"/>
+        <rdfs:comment xml:lang="en">Indicates the song played at the chapter&apos;s end.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasFirstAppearance">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:comment xml:lang="en">Indicates the Chapter some Character appears in for the first time.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"/>
+        <rdfs:comment xml:lang="en">The Order a Chapter has in relation to all other chapters.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location"/>
+        <rdfs:comment xml:lang="en">Indicates the place a Chapter or Season is located.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasOpeningTheme">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song"/>
+        <rdfs:comment xml:lang="en">Indicates the Song played at a Chapter&apos;s start.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role"/>
+        <rdfs:comment xml:lang="en">The Role a Character plays in the series.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasSeasonOrder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"/>
+        <rdfs:comment xml:lang="en">A Chapter&apos;s order inside a Season.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"/>
+        <rdfs:comment xml:lang="en">The name given to a Chapter.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization"/>
+        <rdfs:comment xml:lang="en">Defines the organization a character belongs to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"/>
+        <rdfs:comment xml:lang="en">Defines the character an actor plays in the series.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Date class and its subclasses are expressed as dateTime values.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasMinutes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">Indicates the running time in minutes.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The name given to an object.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasNickname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Indicates the alias used for some characters.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">The position given to an object.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasTotalChapters">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Indicates the total number of Chapters that belong to a Season.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast"/>
+        <rdfs:comment xml:lang="en">A person who acts in stage plays, motion pictures, etc.</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/ontology/Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Aired_date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date"/>
+        <rdfs:comment xml:lang="en">The date some chapter gets emitted for the first time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Birth_date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date"/>
+        <rdfs:comment xml:lang="en">The date a person is born.</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/ontology/birthDate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Cast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"/>
+        <rdfs:comment xml:lang="en">A selection of actors.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter">
+        <rdfs:comment xml:lang="en">A main division of a TV series.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isPortrayedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A person represented in a drama, story, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"/>
+        <rdfs:comment xml:lang="en">A person who writes music.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"/>
+        <rdfs:comment xml:lang="en">A person who creates something.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person"/>
+        <rdfs:comment xml:lang="en">A group of people involved in a particular kind of work or working together.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Date">
+        <rdfs:comment xml:lang="en">The time in terms of the month, day and/or year.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause">
+        <rdfs:comment xml:lang="en">The reason one person died.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"/>
+        <rdfs:comment xml:lang="en">One who interprets the script and supervises the development of a theater, film, television or radio production.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Executive_producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer"/>
+        <rdfs:comment xml:lang="en">The person who executes the production of a play.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#First_appearance">
+        <rdfs:comment xml:lang="en">First character&apos;s appearance in the series.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Last_appearance">
+        <rdfs:comment xml:lang="en">Last time some character appears in the series.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Location">
+        <rdfs:comment xml:lang="en">A place.</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/ontology/location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order">
+        <rdfs:comment xml:lang="en">The chapter&apos;s order regarding the rest of the chapters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization">
+        <rdfs:comment xml:lang="en">A group of persons group together or organized for some purpose or work. An association.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Person">
+        <rdfs:comment xml:lang="en">A human being.</rdfs:comment>
+        <rdfs:sameAs rdf:resource="https://dbpedia.org/ontology/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Crew"/>
+        <rdfs:comment xml:lang="en">A person responsible for the financial and administrative aspects of a stage, film, television or radio production.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role">
+        <rdfs:comment xml:lang="en">A part played by an actor or singer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Running_time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time"/>
+        <rdfs:comment xml:lang="en">A chapter&apos;s length in minutes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasChapter"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A collection of a TV series&apos; chapters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Song">
+        <rdfs:comment xml:lang="en">Short piece of music for singing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Time">
+        <rdfs:comment xml:lang="en">A sistem of measuring the passage of time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title">
+        <rdfs:comment xml:lang="en">Name given to some object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"/>
+        <theWireOntology:hasName>Chris Bauer</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#David_Simon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Creator"/>
+        <theWireOntology:hasName>David Simon</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"/>
+        <theWireOntology:hasName>Dominic West</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Francis_Sobotka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <theWireOntology:isPortrayedBy rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chris_Bauer"/>
+        <theWireOntology:hasName>Francis Sobotka</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#James_McNulty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <theWireOntology:isPortrayedBy rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Dominic_West"/>
+        <theWireOntology:hasName>James McNulty</theWireOntology:hasName>
+        <theWireOntology:hasNickname>Bushy Top</theWireOntology:hasNickname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"/>
+        <theWireOntology:hasName>Michael K Williams</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Omar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <theWireOntology:isPortrayedBy rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Michael_Williams"/>
+        <theWireOntology:hasName>Omar Devon Little</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Tom_Waits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Composer"/>
+        <theWireOntology:hasName>Tom Waits</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Actor"/>
+        <theWireOntology:hasName>Wendell Pierce</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#William_Moreland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+        <theWireOntology:isPortrayedBy rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Wendell_Pierce"/>
+        <theWireOntology:hasName>William Moreland</theWireOntology:hasName>
+        <theWireOntology:hasNickname>Bunk</theWireOntology:hasNickname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Organization"/>
+        <theWireOntology:hasName>Barksdale Organization</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+        <theWireOntology:hasGlobalOrder rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first"/>
+        <theWireOntology:hasSeasonOrder rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_37">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#chapter_60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Role"/>
+        <theWireOntology:hasName>Drug dealer.</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fifth_season -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fifth_season">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Order"/>
+        <theWireOntology:hasPosition rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</theWireOntology:hasPosition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fourth_season -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#fourth_season">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#second_season -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#second_season">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#third_season -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#third_season">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Season"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"/>
+        <theWireOntology:hasName>The Target.</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"/>
+        <theWireOntology:hasName>Collateral Damage.</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_37">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"/>
+        <theWireOntology:hasName>Mission Accomplished.</theWireOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#title_60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Title"/>
+        <theWireOntology:hasName>-30-</theWireOntology:hasName>
+        <rdfs:comment xml:lang="en">-30- is the term used by journalists in North America to denote the end of a story.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Members of Barksdale Org. are all drug dealers.</rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMemberOf"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#barksdale"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasRole"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#drug_dealer"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>A character that murders himself commits suicide.</rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Character"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#isMurderedBy"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Death_Cause"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#suicide"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Chapters from 1 to 13 belong to first Season.</rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#Chapter"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasGlobalOrder"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#hasPosition"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#o"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#p"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#belongsToSeason"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/txusev/ontologies/2022/3/theWireOntology.owl#first_season"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
 
 
 
